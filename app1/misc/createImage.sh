@@ -1,9 +1,7 @@
 #!/bin/bash
 WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd $WORKING_DIR
-
-docker build -t myrepo/app1-build -f Dockerfile  ../
+docker build -t myrepo/app1-build -f $WORKING_DIR/Dockerfile  $WORKING_DIR/../
 
 if (( $? != 0 ))
 then
