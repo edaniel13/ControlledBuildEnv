@@ -1,5 +1,9 @@
-CONTAINER_NAME=app2-build-container
+#!/bin/bash
 
+CONTAINER_NAME=app2-build-container
+WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $WORKING_DIR
 cd misc
 
 echo "Creating build image..."

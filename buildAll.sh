@@ -1,9 +1,6 @@
-cd baseImage
-./createImage.sh
+./baseImage/createImage.sh
 
-cd ../app1
-./build.sh
+./app1/build.sh
 
-cd ../app2
-./build.sh
+./app2/build.sh
 
