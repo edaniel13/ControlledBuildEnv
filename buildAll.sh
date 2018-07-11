@@ -1,7 +1,7 @@
 cd baseImage
 ./createImage.sh
 
-cd app1
+cd ../app1
 ./build.sh
 
 cd ../app2
